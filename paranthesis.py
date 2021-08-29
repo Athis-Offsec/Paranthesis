@@ -3,8 +3,6 @@
 import sys
 import exploit_patterns
 import pyfiglet
-import clipboard as clip
-from restricted_input import r_input
 from exploit_patterns import create,offset
 
 def intro():
@@ -18,14 +16,6 @@ def pattern_create():
 	print("\n")
 	print(pattern)
 	print("\n")
-	copy = input("Do You Want to Copy the pattern in your clipboard Y/N: ")
-	if copy == 'Y' or 'y' :
-		clip.copy(pattern)
-	elif copy == 'N' or 'n':
-		print("\n")
-		print("Sure !")
-	else:
-		print("Please only answer the question with the Specified Letters")
 
 def pattern_offset():
 	offset = input("Enter the address or string you want to find: ")
@@ -61,3 +51,4 @@ if __name__ == "__main__":
 		Menu()
 	except KeyboardInterrupt:
 		print("Thanks For Your Time Buddy :)")
+
