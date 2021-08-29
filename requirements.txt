@@ -1,3 +1,2 @@
 exploit_patterns
-
 pyfiglet
